@@ -22,17 +22,14 @@ body {
   object-fit: cover;
 }
 
-/* Card content */
-.card-body {
-  text-align: center;
-}
-
+/* Text alignment (force 'center' value) */
+h2,
 .card-body h6,
-.card-body p,
-h2 {
+.card-body p {
   text-align: center !important;
 }
 
+/* Card text styles */
 .card h6 {
   font-weight: 600;
 }
@@ -48,6 +45,12 @@ h2 {
   border: none;
 }
 
+/* Hide modal images until modal is visible */
 .modal-content img {
   border-radius: 10px;
+  display: none;
+}
+
+.modal.show .modal-content img {
+  display: block;
 }
