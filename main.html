@@ -4,28 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cards Gallery</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" crossorigin="anonymous">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="container py-5">
-    <h2 class="text-center mb-5 text-uppercase">Cards Gallery</h2>
+    <h2 class="text-center mb-4">Cards Gallery</h2>
 
     <div class="row g-4">
 
       <!-- Card 1 -->
       <div class="col-md-4 col-sm-6">
         <div class="card shadow-sm border-0">
-          <a href="images/Image1.jpg" data-lightbox="gallery">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#imgModal1" class="lightbox">
             <img src="images/Image1.jpg" class="card-img-top" alt="Image 1">
           </a>
           <div class="card-body">
             <h6>Lorem Ipsum</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam urna.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
       </div>
@@ -33,12 +35,12 @@
       <!-- Card 2 -->
       <div class="col-md-4 col-sm-6">
         <div class="card shadow-sm border-0">
-          <a href="images/Image2.jpg" data-lightbox="gallery">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#imgModal2" class="lightbox">
             <img src="images/Image2.jpg" class="card-img-top" alt="Image 2">
           </a>
           <div class="card-body">
             <h6>Lorem Ipsum</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam urna.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
       </div>
@@ -46,12 +48,12 @@
       <!-- Card 3 -->
       <div class="col-md-4 col-sm-6">
         <div class="card shadow-sm border-0">
-          <a href="images/Image3.jpg" data-lightbox="gallery">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#imgModal3" class="lightbox">
             <img src="images/Image3.jpg" class="card-img-top" alt="Image 3">
           </a>
           <div class="card-body">
             <h6>Lorem Ipsum</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam urna.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
       </div>
@@ -59,12 +61,12 @@
       <!-- Card 4 -->
       <div class="col-md-4 col-sm-6">
         <div class="card shadow-sm border-0">
-          <a href="images/Image4.jpg" data-lightbox="gallery">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#imgModal4" class="lightbox">
             <img src="images/Image4.jpg" class="card-img-top" alt="Image 4">
           </a>
           <div class="card-body">
             <h6>Lorem Ipsum</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam urna.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
       </div>
@@ -72,12 +74,12 @@
       <!-- Card 5 -->
       <div class="col-md-4 col-sm-6">
         <div class="card shadow-sm border-0">
-          <a href="images/Image5.jpg" data-lightbox="gallery">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#imgModal5" class="lightbox">
             <img src="images/Image5.jpg" class="card-img-top" alt="Image 5">
           </a>
           <div class="card-body">
             <h6>Lorem Ipsum</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam urna.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
       </div>
@@ -85,12 +87,12 @@
       <!-- Card 6 -->
       <div class="col-md-4 col-sm-6">
         <div class="card shadow-sm border-0">
-          <a href="images/Image6.jpg" data-lightbox="gallery">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#imgModal6" class="lightbox">
             <img src="images/Image6.jpg" class="card-img-top" alt="Image 6">
           </a>
           <div class="card-body">
             <h6>Lorem Ipsum</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam urna.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
       </div>
@@ -98,8 +100,57 @@
     </div>
   </div>
 
+  <!-- Bootstrap Modals for each image -->
+  <div class="modal fade" id="imgModal1" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <img src="images/Image1.jpg" class="w-100 rounded" alt="Image 1 large view">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="imgModal2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <img src="images/Image2.jpg" class="w-100 rounded" alt="Image 2 large view">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="imgModal3" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <img src="images/Image3.jpg" class="w-100 rounded" alt="Image 3 large view">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="imgModal4" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <img src="images/Image4.jpg" class="w-100 rounded" alt="Image 4 large view">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="imgModal5" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <img src="images/Image5.jpg" class="w-100 rounded" alt="Image 5 large view">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="imgModal6" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <img src="images/Image6.jpg" class="w-100 rounded" alt="Image 6 large view">
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

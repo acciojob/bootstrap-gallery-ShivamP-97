@@ -1,4 +1,4 @@
-/* --- Gallery Custom Styles --- */
+/* --- Gallery Styles --- */
 
 body {
   background-color: #f8f9fa;
@@ -11,7 +11,7 @@ body {
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 .card img {
@@ -24,9 +24,12 @@ body {
   text-align: center;
 }
 
+h2, h6, p {
+  text-align: center;
+}
+
 .card h6 {
   font-weight: 600;
-  margin-bottom: 0.5rem;
 }
 
 .card p {
@@ -34,7 +37,11 @@ body {
   font-size: 0.9rem;
 }
 
-h2 {
-  font-weight: 700;
-  letter-spacing: 1px;
+.modal-content {
+  background: transparent;
+  border: none;
+}
+
+.modal-content img {
+  border-radius: 10px;
 }
