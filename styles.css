@@ -1,9 +1,10 @@
-/* --- Gallery Styles --- */
+/* --- Gallery Custom Styles --- */
 
 body {
   background-color: #f8f9fa;
 }
 
+/* Card styling */
 .card {
   border-radius: 10px;
   overflow: hidden;
@@ -14,18 +15,22 @@ body {
   transform: scale(1.03);
 }
 
+/* Card images */
 .card img {
   border-radius: 10px 10px 0 0;
   height: 200px;
   object-fit: cover;
 }
 
+/* Card content */
 .card-body {
   text-align: center;
 }
 
-h2, h6, p {
-  text-align: center;
+.card-body h6,
+.card-body p,
+h2 {
+  text-align: center !important;
 }
 
 .card h6 {
@@ -37,6 +42,7 @@ h2, h6, p {
   font-size: 0.9rem;
 }
 
+/* Modal styling */
 .modal-content {
   background: transparent;
   border: none;
